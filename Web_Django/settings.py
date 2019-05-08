@@ -122,5 +122,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'stafile'),
-    os.path.join(BASE_DIR, 'stafile2'),
 ]
