@@ -20,5 +20,7 @@ from app01 import views as app01
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('test/', app01.test),
+    path('press_list/', app01.press_list),
     url(r'^login/', app01.login),
 ]
