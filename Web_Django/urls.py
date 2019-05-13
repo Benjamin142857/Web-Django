@@ -19,8 +19,18 @@ from django.conf.urls import url
 from app01 import views as app01
 
 urlpatterns = [
+    # 后台管理
     path('admin/', admin.site.urls),
-    path('test/', app01.test),
-    path('press_list/', app01.press_list),
+
+
+    # 出版社Press
+    url(r'^press_list/', app01.press_list),
+    url(r'^press_edit/', app01.press_edit),
+    url(r'^press_del/', app01.press_del),
+    url(r'^press_add/', app01.press_add),
     url(r'^login/', app01.login),
+
+
+    # 临时测试
+    path('test/', app01.test),
 ]
