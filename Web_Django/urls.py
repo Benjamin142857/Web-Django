@@ -32,5 +32,5 @@ urlpatterns = [
 
 
     # 临时测试
-    path('test/', app01.test),
+    url(r'^test/', app01.test),
 ]

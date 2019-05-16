@@ -1,5 +1,6 @@
 from django.db import models
-
+from utils import bjm
+import random
 
 # 用户表
 class User(models.Model):
@@ -26,4 +27,16 @@ class Press(models.Model):
         verbose_name_plural = '出版社表'
 
 
-#
+# 书籍表
+class Book(models.Model):
+    id = models.AutoField(primary_key=True, unique=True)
+    book_id = models.CharField(max_length=12, default=random.choice(['111', '222', '333']))
+    name = models.CharField(max_length=32)
+    press = models.ForeignKey(to='Press', on_delete=models.SET_NULL, null=True, blank=True)
+    pub_date = models.DateField()
+
+    def __str__(self):
+        return '{}-{}'.format(self.book_id, self.name)
+
+    class Meta:
+        verbose_name_plural = '书籍表'

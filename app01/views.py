@@ -7,7 +7,10 @@ def login(request):
 
 
 def test(request):
-    return redirect('/admin/')
+    ret_data = {
+        'name': 'benjamin'
+    }
+    return render(request, 'test.html', ret_data)
 
 
 # press - 出版社
