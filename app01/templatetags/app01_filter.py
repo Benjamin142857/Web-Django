@@ -14,5 +14,18 @@ def add_str(value, string):
     return value + string
 
 
+@register.simple_tag()
+def join_str(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+    ret = ''
+
+    for i in args:
+        ret += str(i)
+
+    return ret
+
+
 if __name__ == '__main__':
     pass

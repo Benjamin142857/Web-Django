@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse, redirect
+from django.views import View
 from app01 import models as app01
 
 
@@ -7,10 +8,21 @@ def login(request):
 
 
 def test(request):
+
+    temp_lst = [str(i)*3 for i in range(16)]
+
     ret_data = {
-        'name': 'benjamin'
+        'name': 'benjamin',
+        'size': '12345678',
+        'list': [temp_lst[i:i+4] for i in range(len(temp_lst)) if i%4 == 0],
     }
-    return render(request, 'test.html', ret_data)
+    ret = render(request, 'test.html', ret_data)
+    ret2 = HttpResponse('forbid', status=404)
+    print(ret)
+    print(type(ret))
+    print(ret2)
+    print(type(ret2))
+    return ret
 
 
 # press - 出版社

@@ -11,7 +11,10 @@
     <title>Title</title>
 
     <link rel="stylesheet" href="/static/vendor/normalize.css">
-    <link rel="stylesheet" href="/static/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+    {% load static %}
+    {% get_static_prefix as STATIC_PREFIX %}
+
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}vendor/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     {% load app01_filter %}
 </head>
@@ -20,7 +23,30 @@
 <body>
 
     <div class="container text-center" style="margin-top: 100px">
-        <button class="btn btn-success">{{ name|add_str:'is very very very handsome' }}</button>
+        <button class="btn btn-success" style="margin-top: 20px">{{ name|add_str:'is very very very handsome' }}</button>
+        <button class="btn btn-danger" style="margin-top: 20px">{{ size|slice:"2:-1" }}</button>
+
+        <table border="1">
+            <tbody>
+            {% for row in list %}
+                <tr>
+                    {% for foo in row %}
+                        {% if forloop.counter == 2 and forloop.parentloop.counter != 2 %}
+                            <td style="color: palevioletred">{{ foo }}<td>
+                        {% else %}
+                            <td>{{ foo }}<td>
+                        {% endif %}
+
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <p>{% join_str name size %}</p>
+
+
+
     </div>
 
 <script src='/static/vendor/jquery-3.4.0.min.js'></script>
