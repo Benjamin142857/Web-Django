@@ -1,27 +1,29 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.views import View
 from app01 import models as app01
-
+from utils import bjm
 
 def login(request):
     return render(request, 'login.html')
 
 
-def test(request):
-
+def test1(request):
+    page = 12
+    now_page = bjm.get_page(request.GET.get('page'), page)
     temp_lst = [str(i)*3 for i in range(16)]
 
-    ret_data = {
-        'name': 'benjamin',
-        'size': '12345678',
-        'list': [temp_lst[i:i+4] for i in range(len(temp_lst)) if i%4 == 0],
-    }
-    ret = render(request, 'test.html', ret_data)
-    ret2 = HttpResponse('forbid', status=404)
-    print(ret)
-    print(type(ret))
-    print(ret2)
-    print(type(ret2))
+    if now_page:
+        ret_data = {
+            'name': 'benjamin',
+            'size': '12345678',
+            'list': [temp_lst[i:i + 4] for i in range(len(temp_lst)) if i % 4 == 0],
+            'page': page,
+            'now_page': now_page,
+        }
+        ret = render(request, 'test1.html', ret_data)
+    else:
+        ret = HttpResponse('页面不存在', status=404)
+
     return ret
 
 
@@ -33,7 +35,7 @@ def press_list(request):
         'test': '2',
     }
 
-    return render(request, 'press_list.html', ret_data)
+    return render(request, 'press/press_list.html', ret_data)
 
 
 def press_edit(request):
@@ -52,7 +54,7 @@ def press_edit(request):
                 'name': press_obj.name,
             }
 
-            ret = render(request, 'press_edit.html', ret_data)
+            ret = render(request, 'press/press_edit.html', ret_data)
 
         # 不存在此ID的出版社
         else:
@@ -110,7 +112,7 @@ def press_add(request):
 
     # 出版社编辑页面GET请求
     if request.method == 'GET':
-        ret = render(request, 'press_add.html')
+        ret = render(request, 'press/press_add.html')
 
         return ret
 

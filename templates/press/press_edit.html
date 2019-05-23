@@ -1,0 +1,36 @@
+{# press_edit 出版社编辑 #}
+{% extends 'base.html' %}
+
+{# head #}
+{% block page-head %}
+    <meta name="keywords" content="None">
+    <meta name="description" content="Just a test">
+    <link rel="icon" href="http://www.benjamin-stella.cn/static/other/favicon.ico" type="image/x-icon"/>
+    <title>Title</title>
+{% endblock %}
+
+{# static #}
+{% load static %}
+{% block page-css %}
+{% endblock %}
+{% block page-js %}
+{% endblock %}
+
+{# main #}
+{% block page-main %}
+    <h2 class="sub-header">{{ name|safe }} 编辑</h2>
+    <form action="/press_edit/?id={{ id|safe }}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="exampleInputEmail1">出版社名</label>
+            <input name="press_name" type="text" class="form-control" id="press_name_input" value="{{ name|safe }}" style="margin-bottom: 50px">
+
+            <button type="submit" class="btn btn-success">保存</button>
+            <a href="/press_del/?id={{ id|safe }}" target="_self">
+                <button type="button" class="btn btn-danger">删除</button>
+            </a>
+        </div>
+    </form>
+{% endblock %}
+
+

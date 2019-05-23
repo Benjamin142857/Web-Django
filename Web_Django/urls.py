@@ -32,5 +32,5 @@ urlpatterns = [
 
 
     # 临时测试
-    url(r'^test/', app01.test),
+    url(r'^test1/', app01.test1),
 ]

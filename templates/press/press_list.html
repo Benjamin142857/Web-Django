@@ -1,0 +1,55 @@
+{# press_list 出版社列表 #}
+{% extends 'base.html' %}
+
+{# head #}
+{% block page-head %}
+    <meta name="keywords" content="None">
+    <meta name="description" content="Just a test">
+    <link rel="icon" href="http://www.benjamin-stella.cn/static/other/favicon.ico" type="image/x-icon"/>
+    <title>Title</title>
+{% endblock %}
+
+{# static #}
+{% load static %}
+{% block page-css %}
+{% endblock %}
+{% block page-js %}
+{% endblock %}
+
+{# main #}
+{% block page-main %}
+    <h2 class="sub-header">出版社列表 <a href="/press_add/"><button class="btn pull-right btn-default"><i class="fa fa-plus fa-fw"></i>&nbsp; 新增</button></a></h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th class="text-center">#</th>
+                <th class="text-center">id</th>
+                <th class="text-center">出版社名</th>
+                <th class="text-center">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for press in press_qs %}
+                <tr class="text-center">
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ press.id }}</td>
+                    <td>{{ press.name }}</td>
+                    <td>
+                        <a href="/press_edit/?id={{ press.id }}" target="_self">
+                            <button class="btn btn-success"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp;
+                                编辑
+                            </button>
+                        </a>
+                        <a href="/press_del/?id={{ press.id }}" target="_self">
+                            <button class="btn btn-danger"><i class="fa fa-trash fa-fw" aria-hidden="true"></i>&nbsp; 删除
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,29 @@
+{% if select == 1 %}
+    <ul class="nav nav-sidebar">
+        <li class="active"><a>出版社管理</a></li>
+        <li><a href="#">书籍管理</a></li>
+        <li><a href="#">作者管理</a></li>
+        <li><a href="#">其他</a></li>
+    </ul>
+{% elif select == 2 %}
+    <ul class="nav nav-sidebar">
+        <li><a href="#">出版社管理</a>
+        <li class="active"><a>书籍管理</a></li>
+        <li><a href="#">作者管理</a></li>
+        <li><a href="#">其他</a></li>
+    </ul>
+{% elif select == 3 %}
+    <ul class="nav nav-sidebar">
+        <li><a>出版社管理</a></li>
+        <li><a href="#">书籍管理</a></li>
+        <li class="active"><a>作者管理</a></li>
+        <li><a href="#">其他</a></li>
+    </ul>
+{% elif select == 4 %}
+    <ul class="nav nav-sidebar">
+        <li><a>出版社管理</a></li>
+        <li><a href="#">书籍管理</a></li>
+        <li><a href="#">作者管理</a></li>
+        <li class="active"><a>其他</a></li>
+    </ul>
+{% endif %}

@@ -39,6 +39,17 @@ def generate_id(length, info):
         return res_id
 
 
+def get_page(page_str, max_page):
+    try:
+        page = int(page_str) if page_str else 1
+        if page in range(1, max_page+1):
+            return page
+        else:
+            return False
+    except:
+        return False
+
+
 if __name__ == '__main__':
     pass
 
