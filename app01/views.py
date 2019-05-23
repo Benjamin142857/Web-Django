@@ -7,12 +7,13 @@ def login(request):
     return render(request, 'login.html')
 
 
-def test1(request):
+def test1(request, now_page='1'):
     page = 12
-    now_page = bjm.get_page(request.GET.get('page'), page)
+    print(now_page)
+    now_page = int(now_page)
     temp_lst = [str(i)*3 for i in range(16)]
 
-    if now_page:
+    if not now_page > page:
         ret_data = {
             'name': 'benjamin',
             'size': '12345678',
@@ -26,6 +27,9 @@ def test1(request):
 
     return ret
 
+
+def test2(request):
+    return HttpResponse('<h1>test2</h1>')
 
 # press - 出版社
 def press_list(request):

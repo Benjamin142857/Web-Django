@@ -10,7 +10,7 @@
             {% if page == now_page %}
                 <li class="active"><a>{{ page }}</a></li>
             {% else %}
-                <li><a href="/test1?page={{ page }}">{{ page }}</a></li>
+                <li><a href="/test1/{{ page }}/">{{ page }}</a></li>
             {% endif %}
         {% endfor %}
         <li>
