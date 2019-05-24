@@ -19,14 +19,14 @@
 {# main #}
 {% block page-main %}
     <h2 class="sub-header">{{ name|safe }} 编辑</h2>
-    <form action="/press_edit/?id={{ id|safe }}" method="post">
+    <form action="{% url 'app01:press_edit' %}?id={{ id|safe }}" method="post">
         {% csrf_token %}
         <div class="form-group">
             <label for="exampleInputEmail1">出版社名</label>
             <input name="press_name" type="text" class="form-control" id="press_name_input" value="{{ name|safe }}" style="margin-bottom: 50px">
 
             <button type="submit" class="btn btn-success">保存</button>
-            <a href="/press_del/?id={{ id|safe }}" target="_self">
+            <a href="{% url 'app01:press_del' %}?id={{ id|safe }}" target="_self">
                 <button type="button" class="btn btn-danger">删除</button>
             </a>
         </div>

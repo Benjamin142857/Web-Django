@@ -1,7 +1,9 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, HttpResponse, redirect, reverse
 from django.views import View
 from app01 import models as app01
 from utils import bjm
+
+
 
 def login(request):
     return render(request, 'login.html')
@@ -28,8 +30,15 @@ def test1(request, now_page='1'):
     return ret
 
 
-def test2(request):
+def test2(request, a):
+    print(a, type(a))
     return HttpResponse('<h1>test2</h1>')
+
+
+class Test3(View):
+    def get(self, request):
+        return HttpResponse('<h1>test3</h1>')
+
 
 # press - 出版社
 def press_list(request):
@@ -77,7 +86,7 @@ def press_edit(request):
             press_obj.name = press_name
             press_obj.save()
 
-            ret = redirect('/press_list/')
+            ret = redirect(reverse('app01:press_list'))
 
         # 不存在此ID的出版社
         else:
@@ -99,7 +108,7 @@ def press_del(request):
             press_obj = qs[0]
             press_obj.delete()
 
-            ret = redirect('/press_list/')
+            ret = redirect(reverse('app01:press_list'))
 
         # 不存在此ID的出版社
         else:
@@ -129,7 +138,7 @@ def press_add(request):
                 name=press_name,
             )
 
-        ret = redirect('/press_list')
+        ret = redirect(reverse('app01:press_list'))
 
         return ret
 

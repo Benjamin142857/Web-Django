@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c2c8a73-ea98-4ead-9ea0-04e41bbd2ac1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/#Attach/d66/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#Attach/d67/1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web_Django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web_Django/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inclusion_tags/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inclusion_tags/pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/press/press_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/press/press_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/press/press_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/press/press_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/press/press_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/press/press_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/bjm.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/bjm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +21,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Web_Django$test.coverage" NAME="test Coverage Results" MODIFIED="1558501124889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/#Attach/d65" />
+    <SUITE FILE_PATH="coverage/Web_Django$Web_Django.coverage" NAME="Web_Django Coverage Results" MODIFIED="1558685384258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Web_Django$d51_.coverage" NAME="d51-字符串截取到列表 Coverage Results" MODIFIED="1557138386562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/#test" />
     <SUITE FILE_PATH="coverage/Web_Django$bjm.coverage" NAME="bjm Coverage Results" MODIFIED="1558009685529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/Web_Django$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1558613746835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/#Attach/d66" />
@@ -58,38 +64,39 @@
     <session id="857392409">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.48" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Django Console" value="291" />
+          <entry key="Django Console" value="565" />
           <entry key="cell" value="110" />
           <entry key="css" value="20" />
           <entry key="dummy" value="9" />
-          <entry key="html" value="2078" />
+          <entry key="html" value="2149" />
           <entry key="js" value="36" />
-          <entry key="py" value="5935" />
+          <entry key="py" value="6366" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="20" />
-          <entry key="HTML" value="2078" />
+          <entry key="HTML" value="2149" />
           <entry key="JavaScript" value="36" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="6226" />
+          <entry key="Python" value="6931" />
           <entry key="Scratch" value="110" />
         </counts>
       </usages-collector>
@@ -99,12 +106,12 @@
           <entry key="app01_press" value="3" />
           <entry key="app01_user" value="3" />
           <entry key="css" value="10" />
-          <entry key="html" value="30" />
-          <entry key="ipynb" value="1" />
+          <entry key="html" value="33" />
+          <entry key="ipynb" value="2" />
           <entry key="js" value="1" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
-          <entry key="py" value="39" />
+          <entry key="py" value="42" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
@@ -112,44 +119,26 @@
         <counts>
           <entry key="CSS" value="10" />
           <entry key="Database Element" value="8" />
-          <entry key="HTML" value="30" />
-          <entry key="IPNB" value="1" />
+          <entry key="HTML" value="33" />
+          <entry key="IPNB" value="2" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="39" />
+          <entry key="Python" value="42" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6076361">
+    <splitter split-orientation="horizontal" split-proportion="0.14141414">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/press/press_edit.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/#Attach/d66/test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/base.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+                <state relative-caret-position="234">
+                  <caret line="13" selection-start-line="13" selection-end-line="13" />
                 </state>
               </provider>
             </entry>
@@ -157,8 +146,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app01/templatetags/app01_filter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="558">
-                  <caret line="31" selection-start-line="31" selection-end-line="31" />
+                <state relative-caret-position="210">
+                  <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
                   <folding>
                     <marker date="1558530982258" expanded="true" signature="229:662" ph="..." />
                     <marker date="1558530982258" expanded="true" signature="474:662" ph="..." />
@@ -168,19 +157,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/press/press_list.html">
+            <entry file="file://$PROJECT_DIR$/templates/test1.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+                <state relative-caret-position="718">
+                  <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/test1.html">
+            <entry file="file://$PROJECT_DIR$/templates/press/press_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+                <state relative-caret-position="340">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                  <folding>
+                    <element signature="n#block#3;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -192,25 +184,38 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app01/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+                <state>
+                  <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
                   <folding>
-                    <element signature="e#0#59#0" expanded="true" />
-                    <marker date="1558606293993" expanded="true" signature="733:738" ph="..." />
-                    <marker date="1558606293993" expanded="true" signature="770:814" ph="..." />
-                    <marker date="1558606293993" expanded="true" signature="2579:3123" ph="..." />
+                    <marker date="1558665758607" expanded="true" signature="744:749" ph="..." />
+                    <marker date="1558665758607" expanded="true" signature="806:946" ph="..." />
+                    <marker date="1558665758607" expanded="true" signature="897:902" ph="..." />
+                    <marker date="1558665758607" expanded="true" signature="897:946" ph="..." />
+                    <marker date="1558665758607" expanded="true" signature="2737:3295" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Web_Django/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="359">
-                  <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+                <state relative-caret-position="306">
+                  <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
                   <folding>
                     <element signature="e#634#666#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app01/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#1#38#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -247,12 +252,23 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/utils/bjm.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="684">
-                  <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+                <state relative-caret-position="211">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="70" />
                   <folding>
                     <element signature="e#122#131#0" expanded="true" />
-                    <marker date="1558525766310" expanded="true" signature="1012:1209" ph="..." />
+                    <element signature="e#491#976#0" />
+                    <element signature="e#1017#1206#0" />
+                    <marker date="1558685283333" expanded="true" signature="857:1054" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/#Attach/d67/1.ipynb">
+              <provider selected="true" editor-type-id="ipnb-editor">
+                <state>
+                  <selected id="3" />
                 </state>
               </provider>
             </entry>
@@ -274,10 +290,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jupyter Notebook" />
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -287,6 +303,7 @@
       <find>/static</find>
       <find>../static/</find>
       <find>Label</find>
+      <find>redirect</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/</replace>
@@ -326,19 +343,21 @@
         <option value="$PROJECT_DIR$/#Attach/d65/pagination.html" />
         <option value="$PROJECT_DIR$/app01/templatetags/pagination.html" />
         <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/utils/bjm.py" />
         <option value="$PROJECT_DIR$/templates/press/base.html" />
         <option value="$PROJECT_DIR$/templates/press/press_base.html" />
-        <option value="$PROJECT_DIR$/templates/press/press_edit.html" />
-        <option value="$PROJECT_DIR$/templates/press/press_list.html" />
-        <option value="$PROJECT_DIR$/templates/press/press_add.html" />
         <option value="$PROJECT_DIR$/app01/templatetags/app01_filter.py" />
         <option value="$PROJECT_DIR$/templates/inclusion_tags/left-menu.html" />
+        <option value="$PROJECT_DIR$/templates/inclusion_tags/pagination.html" />
+        <option value="$PROJECT_DIR$/#Attach/d66/test.py" />
+        <option value="$PROJECT_DIR$/templates/press/press_list.html" />
+        <option value="$PROJECT_DIR$/templates/press/press_edit.html" />
+        <option value="$PROJECT_DIR$/templates/press/press_add.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/app01/views.py" />
         <option value="$PROJECT_DIR$/Web_Django/urls.py" />
-        <option value="$PROJECT_DIR$/templates/inclusion_tags/pagination.html" />
-        <option value="$PROJECT_DIR$/#Attach/d66/test.py" />
+        <option value="$PROJECT_DIR$/app01/urls.py" />
+        <option value="$PROJECT_DIR$/utils/bjm.py" />
+        <option value="$PROJECT_DIR$/#Attach/d67/1.ipynb" />
       </list>
     </option>
   </component>
@@ -375,6 +394,11 @@
             <path>
               <item name="Web_Django" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="app01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Django" type="462c0819:PsiDirectoryNode" />
               <item name="stafile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -405,11 +429,6 @@
               <item name="Web_Django" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Web_Django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Web_Django" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -429,18 +448,19 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\#Programming\Python\_Django\Web_Django\app01" />
+      <recent name="E:\#Programming\Python\_Django\Web_Django\templates" />
+      <recent name="E:\#Programming\Python\_Django\Web_Django\stafile\press_list" />
+      <recent name="E:\#Programming\Python\_Django\Web_Django\stafile" />
+      <recent name="E:\#Programming\Python\_Django\Web_Django" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\#Programming\Python\_Django\Web_Django\templates" />
       <recent name="E:\#Programming\Python\_Django\Web_Django\stafile\press\css" />
       <recent name="E:\#Programming\Python\_Django\Web_Django\stafile\press" />
       <recent name="E:\#Programming\Python\_Django\Web_Django\templates\press" />
       <recent name="E:\#Programming\Python\_Django\Web_Django\templates\inclusion_tags" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\#Programming\Python\_Django\Web_Django\templates" />
-      <recent name="E:\#Programming\Python\_Django\Web_Django\stafile\press_list" />
-      <recent name="E:\#Programming\Python\_Django\Web_Django\stafile" />
-      <recent name="E:\#Programming\Python\_Django\Web_Django" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -455,7 +475,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test (1)">
+  <component name="RunManager" selected="Jupyter Notebook.Web_Django">
+    <configuration name="Web_Django" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="Web_Django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
     <configuration name="bjm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Web_Django" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -597,6 +635,7 @@
       <item itemvalue="Python.bjm" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Jupyter Notebook.Web_Django" />
     </list>
     <recent_temporary>
       <list>
@@ -634,12 +673,12 @@
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13795519" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20308124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3054054" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2527027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -649,13 +688,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.42837837" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.09594595" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.22297297" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.37297297" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.44189188" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.10294118" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.10294118" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -787,46 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/press/press_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/inclusion_tags/left-menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/templatetags/app01_filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <marker date="1558530982258" expanded="true" signature="229:662" ph="..." />
-            <marker date="1558530982258" expanded="true" signature="474:662" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/bjm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="e#122#131#0" expanded="true" />
-            <marker date="1558525766310" expanded="true" signature="1012:1209" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web_Django/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2196">
-          <caret line="122" selection-start-line="122" selection-end-line="123" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -837,17 +840,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/press/press_list.html">
+    <entry file="file://$PROJECT_DIR$/templates/inclusion_tags/pagination.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test1.html">
+    <entry file="file://$PROJECT_DIR$/Web_Django/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="2196">
+          <caret line="122" selection-start-line="122" selection-end-line="123" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/press/press_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/press/press_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/templatetags/app01_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <marker date="1558530982258" expanded="true" signature="229:662" ph="..." />
+            <marker date="1558530982258" expanded="true" signature="474:662" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -864,54 +899,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app01/views.py">
+    <entry file="file://$PROJECT_DIR$/app01/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="144">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1558606293993" expanded="true" signature="733:738" ph="..." />
-            <marker date="1558606293993" expanded="true" signature="770:814" ph="..." />
-            <marker date="1558606293993" expanded="true" signature="2579:3123" ph="..." />
+            <element signature="e#1#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inclusion_tags/pagination.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web_Django/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="e#634#666#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/press/press_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="340">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="n#block#3;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/press/press_edit.html">
+    <entry file="file://$PROJECT_DIR$/templates/test1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="718">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/django/shortcuts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#188#203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/#Attach/d66/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="234">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
+          <folding>
+            <marker date="1558665758607" expanded="true" signature="744:749" ph="..." />
+            <marker date="1558665758607" expanded="true" signature="806:946" ph="..." />
+            <marker date="1558665758607" expanded="true" signature="897:902" ph="..." />
+            <marker date="1558665758607" expanded="true" signature="897:946" ph="..." />
+            <marker date="1558665758607" expanded="true" signature="2737:3295" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/bjm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="70" />
+          <folding>
+            <element signature="e#122#131#0" expanded="true" />
+            <element signature="e#491#976#0" />
+            <element signature="e#1017#1206#0" />
+            <marker date="1558685283333" expanded="true" signature="857:1054" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#Attach/d67/1.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
         </state>
       </provider>
     </entry>

@@ -18,7 +18,7 @@
 
 {# main #}
 {% block page-main %}
-    <h2 class="sub-header">出版社列表 <a href="/press_add/"><button class="btn pull-right btn-default"><i class="fa fa-plus fa-fw"></i>&nbsp; 新增</button></a></h2>
+    <h2 class="sub-header">出版社列表 <a href="{% url 'app01:press_add' %}"><button class="btn pull-right btn-default"><i class="fa fa-plus fa-fw"></i>&nbsp; 新增</button></a></h2>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -36,12 +36,12 @@
                     <td>{{ press.id }}</td>
                     <td>{{ press.name }}</td>
                     <td>
-                        <a href="/press_edit/?id={{ press.id }}" target="_self">
+                        <a href="{% url 'app01:press_edit' %}?id={{ press.id }}" target="_self">
                             <button class="btn btn-success"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp;
                                 编辑
                             </button>
                         </a>
-                        <a href="/press_del/?id={{ press.id }}" target="_self">
+                        <a href="{% url 'app01:press_del' %}?id={{ press.id }}" target="_self">
                             <button class="btn btn-danger"><i class="fa fa-trash fa-fw" aria-hidden="true"></i>&nbsp; 删除
                             </button>
                         </a>

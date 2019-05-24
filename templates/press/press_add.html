@@ -19,7 +19,7 @@
 {# main #}
 {% block page-main %}
     <h2 class="sub-header">出版社新增</h2>
-    <form action="/press_add/" method="post">
+    <form action="{% url 'app01:press_add' %}" method="post">
         {% csrf_token %}
         <div class="form-group">
             <label for="exampleInputEmail1">出版社名</label>
