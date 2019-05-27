@@ -13,6 +13,7 @@ import random
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Web_Django.settings")
 
 from app01 import models as app01
+from django.db.models import Max, Min, Avg, Count, F, Q
 # import django
 # django.setup()
 
@@ -49,5 +50,16 @@ def get_page(page_str, max_page):
 
 
 if __name__ == '__main__':
-    pass
+    # 查找每个出版社价格最高的书籍价格
+    # 1.从出版社找
+    app01.Press.objects.values('name').annotate(max_price=Max('book__price')).values('max_price')
 
+    # 2.从书籍找
+    app01.Book.objects.values('press__name').annotate(max_price=Max('price')).values('max_price')
+
+    # 查找每个出版社的名字以及出的书的数量
+    # 1. 从出版社找
+    app01.Press.objects.values('name').annotate(book_count=Count('book_set')).values('name', 'book_count')
+
+    # 2. 从书籍找
+    app01.Book.objects.values('press__name').annotate(book_count=Count('id')).values('press__name', 'book_count')

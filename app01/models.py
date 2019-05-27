@@ -32,7 +32,8 @@ class Book(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
     book_id = models.CharField(max_length=12, default=random.choice(['111', '222', '333']))
     name = models.CharField(max_length=32)
-    press = models.ForeignKey(to='Press', on_delete=models.SET_NULL, null=True, blank=True)
+    press = models.ForeignKey(to='Press', on_delete=models.SET_NULL, null=True, blank=True, related_name='book')
+    price = models.IntegerField()
     pub_date = models.DateField()
 
     def __str__(self):
