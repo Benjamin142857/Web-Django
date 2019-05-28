@@ -13,6 +13,4 @@ urlpatterns = [
     url(r'^app01/', include('app01.urls', namespace='app01')),
 
 
-
-
 ]

@@ -25,10 +25,11 @@
                         <h3 class="panel-title">登录</h3>
                     </div>
                     <div class="panel-body">
-                        <form action="https://search.bilibili.com/all" method="get">
+                        <form action="{{ request.get_full_path }}" method="post">
+                            {% csrf_token %}
                             <div class="form-group">
                                 <label for="username">用户名</label>
-                                <input type="text" name="keyword" class="form-control" id="username" placeholder="请输入用户名">
+                                <input type="text" name="username" class="form-control" id="username" placeholder="请输入用户名">
                             </div>
                             <div class="form-group">
                                 <label for="password">密码</label>
@@ -39,6 +40,7 @@
                                     <input type="checkbox"> 记住密码
                                 </label>
                             </div>
+                            <p class="help-block text-center" style="color: red">{{ warning }}</p>
                             <div class="row col-md-6 col-md-offset-3">
                                 <button type="submit" class="btn btn-default btn-block">登录</button>
                             </div>

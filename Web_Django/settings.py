@@ -47,6 +47,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'utils.middlewares.LoginCheck',
+    # '#Attach.d69.bjm_middlewares.MD001',
+    # '#Attach.d69.bjm_middlewares.MD002',
+    # '#Attach.d69.bjm_middlewares.MD003',
 ]
 
 ROOT_URLCONF = 'Web_Django.urls'
@@ -147,3 +151,15 @@ STATICFILES_DIRS = [
 #         },
 #     }
 # }
+
+
+# MiddleWare LoginCheck List
+LOGINCHECK_LIST = {
+    'white': [
+        '/app01/login/',
+    ],
+    'black': [
+        '/admin/login/',
+        '/admin/',
+    ],
+}
