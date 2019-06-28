@@ -17,5 +17,9 @@ urlpatterns = [
     url(r'^test1/$', app01.test1),
     url(r'^test1/(?P<now_page>[0-9]+)/$', app01.test1),
     url(r'^test2/(?P<a>[0-9a-z]{3})/$', app01.test2),
-    url(r'^test3/(?P<a>[0-9a-z]{1})/(?P<b>[0-9a-z]{2})/([0-9a-z]{3})/$', app01.Test3.as_view())
+    url(r'^test/api/$', app01.test_api),
+    url(r'^test3/(?P<a>[0-9a-z]{1})/(?P<b>[0-9a-z]{2})/([0-9a-z]{3})/$', app01.Test3.as_view()),
+    url(r'^test4/$', app01.test4),
 ]
+
+

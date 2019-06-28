@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cn-ZH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Benjamin142857">
+    <meta name="keywords" content="None">
+    <meta name="description" content="Just a test">
+    <link rel="icon" href="http://www.benjamin-stella.cn/static/other/favicon.ico" type="image/x-icon"/>
+    <title>Title</title>
+
+    {% load static %}
+    {% get_static_prefix as STATIC_PREFIX %}
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}vendor/normalize.css">
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="row" style="margin-top: 100px">
+            <div class="col-md-6 col-md-offset-3">
+                <table class="center-block" style="font-size: 20px">
+                    <tbody>
+                    {% for book in books %}
+                        <tr>
+                            <td>{{ book.id }}</td>
+                            <td>{{ book.name }}</td>
+                            <td>{{ book.pub_date }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,9 +1,12 @@
 from django.shortcuts import render, HttpResponse, redirect, reverse
+from django.http import JsonResponse
 from django.views import View
+from django.views.decorators.cache import cache_page
 from django.db.models import Max, Min, Avg, Sum, Count, Q, F
 from app01 import models as app01
+from app01 import form
 from utils import bjm
-
+from django.core.cache import cache
 
 
 def login(request):
@@ -59,8 +62,17 @@ def test1(request, now_page='1'):
 
 
 def test2(request, a):
-    print(request.bjm)
-    return HttpResponse('<h1>test2</h1>')
+    if request.method == 'GET':
+        reg_form = form.RegForm()
+        cache.set('aaa', 130, 60*5)
+        return render(request, 'test2.html', {'reg_form': reg_form})
+
+    if request.method == 'POST':
+        reg_form_obj = form.RegForm(request.POST)
+        if reg_form_obj.is_valid():
+            return HttpResponse('ok')
+        else:
+            return render(request, 'test2.html', {'reg_form': reg_form_obj})
 
 
 class Test3(View):
@@ -70,6 +82,13 @@ class Test3(View):
         print('执行test3[end]')
 
         return ret
+
+
+def test4(request):
+    print(cache.get('aaa'))
+    book_qs = app01.Book.objects.all()
+    return render(request, 'test4.html', {'books': book_qs, })
+
 
 
 # press - 出版社
@@ -178,7 +197,24 @@ def press_add(request):
         return HttpResponse('错误非GET或POST请求', status=404)
 
 
+def test_api(request):
+    if request.method == 'POST':
 
+        print(request.POST)
+        print(request.FILES)
+        ret = {
+            'status': 1,
+            'msg': 'successful',
+            'data': 1,
+        }
+
+    else:
+        ret = {
+            'status': 0,
+            'msg': 'error',
+        }
+
+    return JsonResponse(ret)
 
 
 if __name__ == '__main__':

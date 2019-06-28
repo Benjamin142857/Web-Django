@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cn-ZH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Benjamin142857">
+    <meta name="keywords" content="None">
+    <meta name="description" content="Just a test">
+    <link rel="icon" href="http://www.benjamin-stella.cn/static/other/favicon.ico" type="image/x-icon"/>
+    <title>Title</title>
+
+    {% load static %}
+    {% get_static_prefix as STATIC_PREFIX %}
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}vendor/normalize.css">
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body background="{{ STATIC_PREFIX }}img/background.jpg">
+    <div class="container">
+        <div class="row" style="margin-top: 150px">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default" style="background: rgba(255, 255, 255, 0.6)">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">注册</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" action="" method="post" novalidate>
+                            {% csrf_token %}
+                            <div class="form-group {% if reg_form.username.errors %}has-error{% endif %}">
+                                <label class="col-md-2 control-label" for="{{ reg_form.username.id_for_label }}">{{ reg_form.username.label }}</label>
+                                <div class="col-md-10">
+                                    {{ reg_form.username }}
+                                    <span class="help-block">{{ reg_form.username.errors.0 }}</span>
+                                </div>
+                            </div>
+                            <div class="form-group {% if reg_form.password.errors %}has-error{% endif %}">
+                                <label class="col-md-2 control-label" for="{{ reg_form.password.id_for_label }}">{{ reg_form.password.label }}</label>
+                                <div class="col-md-10">
+                                    {{ reg_form.password }}
+                                    <span class="help-block">{{ reg_form.password.errors.0 }}</span>
+                                </div>
+                            </div>
+                            <div class="form-group {% if reg_form.re_password.errors %}has-error{% endif %}">
+                                <label class="col-md-2 control-label" for="{{ reg_form.re_password.id_for_label }}">{{ reg_form.re_password.label }}</label>
+                                <div class="col-md-10">
+                                    {{ reg_form.re_password }}
+                                    <span class="help-block">{{ reg_form.re_password.errors.0 }}</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">{{ reg_form.gender.label }}</label>
+                                <div class="col-md-10 radio">
+                                    {% for radio in reg_form.gender %}
+                                        <label for="{{ radio.id_for_label }}">{{ radio.tag }}{{ radio.choice_label }}</label>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <button class="btn btn-default center-block" type="submit">sign up</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src='{{ STATIC_PREFIX }}vendor/jquery-3.4.0.min.js'></script>
+    <script src='{{ STATIC_PREFIX }}vendor/bootstrap-3.3.7/js/bootstrap.min.js'></script>
+    <script>
+        $('.form-group.has-error').find('input').focus(function () {
+            $(this).parent().parent().removeClass('has-error').find('span').text('');
+        });
+    </script>
+</body>
+
+</html>
