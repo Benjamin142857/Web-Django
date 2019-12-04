@@ -2,6 +2,7 @@ from django.db import models
 from utils import bjm
 import random
 
+
 # 用户表
 class User(models.Model):
     id = models.AutoField(unique=True, primary_key=True)
@@ -19,6 +20,7 @@ class User(models.Model):
 class Press(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
     name = models.CharField(max_length=32)
+    aaa = models.DecimalField(max_digits=2, decimal_places=0)
 
     def __str__(self):
         return '{}-{}'.format(self.id, self.name)
